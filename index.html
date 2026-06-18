@@ -4,25 +4,13 @@
 <head>
   <meta charSet="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preload" as="image"
-    image
-    imageSizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
-  <link rel="preload" as="image"
-    image
-    imageSizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
-  <link rel="preload" as="image"
-    image
-    imageSizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
-  <link rel="preload" as="image"
-    image
-    imageSizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
-  <link rel="stylesheet" href="/_next/static/chunks/src_app_globals_162hn9o.css"
-    data-precedence="next_static/chunks/src_app_globals_162hn9o.css" />
-  <link rel="preload" as="script" fetchPriority="low"
-    href="/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1xx01vv._.js" />
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
-    as="style" />
+  
+  
+  
+  
+  
+  
+  
   <title>PHONE FASION INC – Premium Phone Cases | Luxury, Rugged &amp; Custom Cases</title>
   <meta name="description"
     content="Discover the finest premium phone cases at PHONE FASION INC. Shop luxury, rugged, transparent, leather, gaming, magnetic, and custom printed cases for all major smartphone brands." />
@@ -49,7 +37,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap"
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./input.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -57,13 +45,16 @@
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
     
     :root {
-      --dark-bg: #0a0a0a;
-      --dark-card: #151515;
+      --dark-bg: #e0f2fe;
+      --dark-card: #ffffff;
     }
     body {
-      background-color: var(--dark-bg);
-      color: #ffffff;
+      background: linear-gradient(-45deg, #e0f2fe, #fce7f3, #eef2ff, #fff1f2, #f3e8ff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #0f172a;
       font-family: 'Inter', sans-serif;
+      min-height: 100vh;
     }
     .text-gradient-gold {
       background: linear-gradient(135deg, #E8C97A 0%, #C9A84C 100%);
@@ -89,20 +80,23 @@
       color: #E8C97A;
     }
     .glass-card {
-      background: rgba(25, 25, 25, 0.6);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
       border-radius: 1rem;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
     }
     .glass-header {
-      background: rgba(10, 10, 10, 0.8);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
     }
     .nav-link {
-      color: #9CA3AF;
-      font-size: 0.875rem;
-      font-weight: 500;
+      color: #334155;
+      font-size: 0.95rem;
+      font-weight: 700;
       transition: all 0.3s ease;
     }
     .nav-link:hover, .nav-link.active {
@@ -124,6 +118,28 @@
       transition: all 0.3s ease;
     }
     .btn-primary:hover { transform: scale(1.05); }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #a855f7 0%, #ec4899 50%, #f59e0b 100%);
+      background-size: 200% auto;
+      color: #ffffff !important;
+      font-weight: 800;
+      border-radius: 0.5rem;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    }
+    .btn-gold:hover {
+      background-position: right center;
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(236, 72, 153, 0.6);
+    }
+
+  
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
   </style>
 </head>
 
@@ -136,7 +152,7 @@
           class="flex items-center gap-3 group" id="nav-home">
           <div class="w-10 h-10 rounded-xl flex items-center justify-center"
             style="background:linear-gradient(135deg, #C9A84C, #E8C97A)"><svg width="22" height="22" viewBox="0 0 24 24"
-              fill="none" stroke="var(--dark-bg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
               <line x1="12" y1="18" x2="12.01" y2="18"></line>
             </svg></div>
@@ -144,7 +160,7 @@
             <div class="font-black text-sm leading-tight"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:'Inter', sans-serif;letter-spacing:0.08em">
               PHONE FASION</div>
-            <div class="text-xs text-gray-500 font-medium tracking-widest">INC</div>
+            <div class="text-xs text-slate-800 font-medium tracking-widest">INC</div>
           </div>
         </button>
         <div class="hidden lg:flex items-center gap-8"><button
@@ -157,13 +173,13 @@
             class="nav-link transition-colors duration-300 " id="nav-documents">Documents</button><button
             class="nav-link transition-colors duration-300 " id="nav-contact">Contact</button></div>
         <div class="hidden lg:flex items-center gap-4"><a href="tel:+18053446414"
-            class="flex items-center gap-2 text-sm text-gray-400 hover:text-[#C9A84C] transition-colors"
+            class="flex items-center gap-2 text-sm text-slate-700 hover:text-[#C9A84C] transition-colors"
             id="nav-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <path
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.72a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z">
               </path>
-            </svg>+1 (805) 344-6414</a><button class="btn-gold shadow-md text-black px-5 py-2.5 text-xs"
+            </svg>+1 (805) 344-6414</a><button class="btn-gold shadow-lg text-white px-5 py-2.5 text-xs"
             id="nav-cta">Get In Touch</button></div><button class="lg:hidden p-2 rounded-lg"
           style="border:1px solid rgba(201, 168, 76, 0.2)" id="nav-mobile-menu" aria-label="Toggle menu">
           <div class="flex flex-col gap-1.5"><span class="block w-5 h-0.5 bg-[#C9A84C]"></span><span
@@ -172,7 +188,7 @@
       </div>
     </nav>
     <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style="background:linear-gradient(160deg, var(--dark-bg) 0%, var(--dark-card) 50%, var(--dark-bg) 100%)">
+      style="background: transparent;">
       <div class="absolute inset-0 grid-bg opacity-30"></div>
       <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full pointer-events-none"
         style="background:radial-gradient(circle, rgba(201, 168, 76, 0.12) 0%, transparent 70%);filter:blur(40px)">
@@ -180,60 +196,54 @@
       <div class="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full pointer-events-none"
         style="background:radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);filter:blur(40px)">
       </div>
-      <div class="relative z-10 max-w-7xl mx-auto px-6 text-center pt-32 pb-16">
+      <div class="relative z-10 max-w-7xl mx-auto px-6 text-center pt-32 pb-32 lg:pb-40">
         <div class="flex justify-center mb-6" style="opacity: 1;transform: none"><span class="badge-gold">✦ Premium
             Phone Accessories Since 2014</span></div>
-        <h1 class="section-title text-gray-900 mb-6"
+        <h1 class="section-title text-slate-900 mb-6"
           style="font-family:'Playfair Display', serif;opacity: 1;transform: none">Premium Phone
           Cases<br /><span class="shimmer-gold">Designed For</span><br />Protection &amp; Style</h1>
         <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
-          style="color:#4B5563;opacity: 1;transform: none">Discover luxury, rugged, transparent, leather, and custom
+          style="color:#1f2937;opacity: 1;transform: none">Discover luxury, rugged, transparent, leather, and custom
           phone cases for every lifestyle. Engineered to perfection by<!-- --> <span style="color:#C9A84C">PHONE FASION
             INC</span>.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           style="opacity: 1;transform: none"><button
-            class="btn-gold shadow-md text-black px-8 py-4 text-sm min-w-[200px]" id="hero-cta-browse">Browse
-            Collection</button><button class="btn-outline-gold px-8 py-4 text-sm min-w-[200px]"
+            class="btn-gold shadow-lg text-white px-8 py-4 text-sm min-w-[200px]" id="hero-cta-browse">Browse
+            Collection</button><button class="btn-gold shadow-lg text-white px-8 py-4 text-sm min-w-[200px]"
             id="hero-cta-contact">Contact Us</button></div>
         <div class="flex flex-wrap gap-6 justify-center" style="opacity: 1;transform: none">
           <div class="glass-card px-6 py-4 text-center min-w-[120px]">
             <div class="text-2xl font-black mb-1"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
               50K+</div>
-            <div class="text-xs font-medium" style="color:#374151">Happy Customers</div>
+            <div class="text-xs font-medium" style="color:#1f2937">Happy Customers</div>
           </div>
           <div class="glass-card px-6 py-4 text-center min-w-[120px]">
             <div class="text-2xl font-black mb-1"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
               200+</div>
-            <div class="text-xs font-medium" style="color:#374151">Case Designs</div>
+            <div class="text-xs font-medium" style="color:#1f2937">Case Designs</div>
           </div>
           <div class="glass-card px-6 py-4 text-center min-w-[120px]">
             <div class="text-2xl font-black mb-1"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
               10+</div>
-            <div class="text-xs font-medium" style="color:#374151">Years Experience</div>
+            <div class="text-xs font-medium" style="color:#1f2937">Years Experience</div>
           </div>
           <div class="glass-card px-6 py-4 text-center min-w-[120px]">
             <div class="text-2xl font-black mb-1"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
               4.9★</div>
-            <div class="text-xs font-medium" style="color:#374151">Average Rating</div>
+            <div class="text-xs font-medium" style="color:#1f2937">Average Rating</div>
           </div>
         </div>
       </div>
-      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style="opacity: 1">
-        <span class="text-xs font-medium tracking-widest uppercase" style="color:#374151">Scroll Down</span>
-        <div class="w-5 h-8 rounded-full border-2 flex items-start justify-center pt-1.5"
-          style="border-color:rgba(201,168,76,0.4)">
-          <div class="w-1 h-2 rounded-full bg-[#C9A84C]"></div>
-        </div>
-      </div>
+      
       <div class="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-        style="background:linear-gradient(to bottom, transparent, var(--dark-bg))"></div>
+        style="background: transparent;"></div>
     </section>
     <section id="about" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
@@ -243,13 +253,13 @@
           <div>
             <div class="mb-4" style="opacity: 1;transform: none"><span class="badge-gold">About PHONE FASION INC</span>
             </div>
-            <h2 class="section-title text-gray-900 mb-6" style="opacity: 1;transform: none">Crafting Excellence<!-- -->
+            <h2 class="section-title text-slate-900 mb-6" style="opacity: 1;transform: none">Crafting Excellence<!-- -->
               <span class="text-gradient-gold">in Every Case</span></h2>
-            <p class="text-base leading-relaxed mb-6" style="color:#4B5563;opacity: 1;transform: none">PHONE FASION INC
+            <p class="text-base leading-relaxed mb-6" style="color:#1f2937;opacity: 1;transform: none">PHONE FASION INC
               is a legally registered premium phone accessories company based in Ocala, Florida, United States. Founded
               with a passion for combining cutting-edge protection with sophisticated design, we serve customers who
               demand nothing but the best for their prized devices.</p>
-            <p class="text-base leading-relaxed mb-8" style="color:#4B5563;opacity: 1;transform: none">Under the
+            <p class="text-base leading-relaxed mb-8" style="color:#1f2937;opacity: 1;transform: none">Under the
               leadership of<!-- --> <span style="color:#C9A84C" class="font-semibold">President MD G Kibria</span>, our
               company is committed to delivering world-class phone covers — from luxury leather cases to rugged
               protective shells and custom printed designs — tailored to every lifestyle.</p>
@@ -258,20 +268,20 @@
               </h3>
               <div class="grid grid-cols-2 gap-4">
                 <div>
-                  <div class="text-xs font-medium mb-0.5" style="color:#374151">Company Number</div>
-                  <div class="text-sm font-semibold text-gray-900">P14000069743</div>
+                  <div class="text-xs font-medium mb-0.5" style="color:#1f2937">Company Number</div>
+                  <div class="text-sm font-semibold text-slate-900">P14000069743</div>
                 </div>
                 <div>
-                  <div class="text-xs font-medium mb-0.5" style="color:#374151">EIN Number</div>
-                  <div class="text-sm font-semibold text-gray-900">47-1636518</div>
+                  <div class="text-xs font-medium mb-0.5" style="color:#1f2937">EIN Number</div>
+                  <div class="text-sm font-semibold text-slate-900">47-1636518</div>
                 </div>
                 <div>
-                  <div class="text-xs font-medium mb-0.5" style="color:#374151">State</div>
-                  <div class="text-sm font-semibold text-gray-900">Florida, USA</div>
+                  <div class="text-xs font-medium mb-0.5" style="color:#1f2937">State</div>
+                  <div class="text-sm font-semibold text-slate-900">Florida, USA</div>
                 </div>
                 <div>
-                  <div class="text-xs font-medium mb-0.5" style="color:#374151">Status</div>
-                  <div class="text-sm font-semibold text-gray-900">Active ✓</div>
+                  <div class="text-xs font-medium mb-0.5" style="color:#1f2937">Status</div>
+                  <div class="text-sm font-semibold text-slate-900">Active ✓</div>
                 </div>
               </div>
             </div>
@@ -287,41 +297,41 @@
           <div class="grid grid-cols-2 gap-4">
             <div class="glass-card p-5 product-card" style="opacity: 1;transform: none">
               <div class="text-3xl mb-3">🏆</div>
-              <h4 class="font-bold text-gray-900 text-sm mb-2">Premium Quality</h4>
-              <p class="text-xs leading-relaxed" style="color:#374151">Every case is crafted with top-tier materials
+              <h4 class="font-bold text-slate-900 text-sm mb-2">Premium Quality</h4>
+              <p class="text-xs leading-relaxed" style="color:#1f2937">Every case is crafted with top-tier materials
                 that meet international quality standards.</p>
             </div>
             <div class="glass-card p-5 product-card" style="opacity: 1;transform: none">
               <div class="text-3xl mb-3">🛡️</div>
-              <h4 class="font-bold text-gray-900 text-sm mb-2">Military-Grade Protection</h4>
-              <p class="text-xs leading-relaxed" style="color:#374151">Our cases undergo rigorous testing for drop,
+              <h4 class="font-bold text-slate-900 text-sm mb-2">Military-Grade Protection</h4>
+              <p class="text-xs leading-relaxed" style="color:#1f2937">Our cases undergo rigorous testing for drop,
                 scratch, and impact resistance.</p>
             </div>
             <div class="glass-card p-5 product-card" style="opacity: 1;transform: none">
               <div class="text-3xl mb-3">🎨</div>
-              <h4 class="font-bold text-gray-900 text-sm mb-2">Iconic Designs</h4>
-              <p class="text-xs leading-relaxed" style="color:#374151">From minimalist to bold, our design team creates
+              <h4 class="font-bold text-slate-900 text-sm mb-2">Iconic Designs</h4>
+              <p class="text-xs leading-relaxed" style="color:#1f2937">From minimalist to bold, our design team creates
                 cases that make a statement.</p>
             </div>
             <div class="glass-card p-5 product-card" style="opacity: 1;transform: none">
               <div class="text-3xl mb-3">⚡</div>
-              <h4 class="font-bold text-gray-900 text-sm mb-2">Fast Shipping</h4>
-              <p class="text-xs leading-relaxed" style="color:#374151">Orders dispatched within 24 hours with real-time
+              <h4 class="font-bold text-slate-900 text-sm mb-2">Fast Shipping</h4>
+              <p class="text-xs leading-relaxed" style="color:#1f2937">Orders dispatched within 24 hours with real-time
                 tracking for your peace of mind.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="categories" class="section-padding relative overflow-hidden" style="background:var(--dark-bg)">
+    <section id="categories" class="section-padding relative overflow-hidden" style="background: transparent;">
       <div class="absolute inset-0 particles-bg opacity-40"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span class="badge-gold">Our
               Collections</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">Explore<!-- --> <span
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">Explore<!-- --> <span
               class="text-gradient-gold">Product Categories</span></h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">Eight distinct collections crafted to meet every taste,
+          <p style="color:#1f2937;opacity: 1;transform: none">Eight distinct collections crafted to meet every taste,
             lifestyle, and protection need.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -337,9 +347,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(201, 168, 76, 0.15);color:#C9A84C;border:1px solid rgba(201, 168, 76, 0.2)">Bestseller</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Luxury Cases
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Luxury Cases
               </h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Opulent designs crafted for the discerning
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Opulent designs crafted for the discerning
                 individual who demands elegance fused with superior protection.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -366,9 +376,9 @@
                   style="background:rgba(100, 116, 139, 0.15);color:#64748B;border:1px solid rgba(100, 116, 139, 0.2)">Best
                   Protection</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Rugged Cases
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Rugged Cases
               </h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Military-grade shielding with multi-layer
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Military-grade shielding with multi-layer
                 protection engineered to withstand the most extreme conditions.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -394,9 +404,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(56, 189, 248, 0.15);color:#38BDF8;border:1px solid rgba(56, 189, 248, 0.2)">Popular</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Transparent
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Transparent
                 Cases</h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Crystal-clear cases that showcase the natural
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Crystal-clear cases that showcase the natural
                 beauty of your device while offering solid protection.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -422,9 +432,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(52, 211, 153, 0.15);color:#34D399;border:1px solid rgba(52, 211, 153, 0.2)">Comfortable</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Silicone
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Silicone
                 Cases</h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Silky-soft premium silicone with anti-fingerprint
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Silky-soft premium silicone with anti-fingerprint
                 coating for an everyday premium feel.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -450,9 +460,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(217, 119, 6, 0.15);color:#D97706;border:1px solid rgba(217, 119, 6, 0.2)">Premium</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Leather
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Leather
                 Cases</h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Genuine and vegan leather cases with
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Genuine and vegan leather cases with
                 sophisticated stitching — a timeless executive statement.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -478,9 +488,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(168, 85, 247, 0.15);color:#A855F7;border:1px solid rgba(168, 85, 247, 0.2)">Gaming</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Gaming Cases
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Gaming Cases
               </h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">RGB-lit gaming cases with cooling grips and
+              <p class="text-sm leading-relaxed" style="color:#1f2937">RGB-lit gaming cases with cooling grips and
                 precision button feedback for the ultimate gaming experience.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -506,9 +516,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(99, 102, 241, 0.15);color:#6366F1;border:1px solid rgba(99, 102, 241, 0.2)">Innovative</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Magnetic
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Magnetic
                 Cases</h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">MagSafe-compatible magnetic cases with perfectly
+              <p class="text-sm leading-relaxed" style="color:#1f2937">MagSafe-compatible magnetic cases with perfectly
                 aligned charging rings for seamless compatibility.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -534,9 +544,9 @@
                   class="text-xs font-bold px-2 py-1 rounded-lg"
                   style="background:rgba(236, 72, 153, 0.15);color:#EC4899;border:1px solid rgba(236, 72, 153, 0.2)">Personalized</span>
               </div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Custom
+              <h3 class="font-bold text-slate-900 text-lg mb-2 group-hover:text-[#C9A84C] transition-colors">Custom
                 Printed</h3>
-              <p class="text-sm leading-relaxed" style="color:#374151">Design your own masterpiece. Upload artwork,
+              <p class="text-sm leading-relaxed" style="color:#1f2937">Design your own masterpiece. Upload artwork,
                 photos, or logos for a truly one-of-a-kind phone case.</p>
               <div
                 class="mt-4 flex items-center gap-2 text-xs font-semibold group-hover:gap-3 transition-all duration-300"
@@ -554,7 +564,7 @@
       </div>
     </section>
     <section id="featured" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full pointer-events-none"
@@ -563,9 +573,9 @@
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span class="badge-gold">Featured
               Products</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">Our<!-- --> <span
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">Our<!-- --> <span
               class="text-gradient-gold">Featured Collection</span></h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">Handpicked bestsellers from our premium lineup — each a
+          <p style="color:#1f2937;opacity: 1;transform: none">Handpicked bestsellers from our premium lineup — each a
             masterpiece of design and engineering. Priced from<!-- --> <span style="color:#C9A84C">$50 to $200</span>.
           </p>
         </div>
@@ -573,7 +583,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col" id="product-carbon-fiber"
             style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Premium Carbon Fiber Case" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -610,13 +620,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Luxury</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Luxury</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Premium Carbon Fiber Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Ultra-lightweight aerospace carbon
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Ultra-lightweight aerospace carbon
                 fiber with a sleek matte finish. Scratch and drop resistant.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -646,12 +656,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.8<!-- --> (<!-- -->1,240<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.8<!-- --> (<!-- -->1,240<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->50</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-carbon-fiber">View Details</button>
               </div>
             </div>
@@ -659,7 +669,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col" id="product-luxury-leather"
             style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Luxury Leather Case" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -696,13 +706,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Leather</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Leather</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Luxury Leather Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Hand-stitched genuine leather with
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Hand-stitched genuine leather with
                 microfiber interior. Adds elegance to your everyday carry.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -732,12 +742,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9<!-- --> (<!-- -->3,210<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9<!-- --> (<!-- -->3,210<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->75</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-luxury-leather">View Details</button>
               </div>
             </div>
@@ -745,7 +755,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-transparent-shock" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Transparent Shockproof Case" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -782,13 +792,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Transparent</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Transparent</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Transparent Shockproof Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Crystal-clear polycarbonate back with
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Crystal-clear polycarbonate back with
                 shock-absorbing TPU bumper. Show off your device.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -818,12 +828,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.7<!-- --> (<!-- -->2,180<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.7<!-- --> (<!-- -->2,180<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->60</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-transparent-shock">View Details</button>
               </div>
             </div>
@@ -831,7 +841,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col" id="product-gaming-rgb"
             style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Gaming RGB Case" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -868,13 +878,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Gaming</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Gaming</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Gaming RGB Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Dynamic RGB backlighting with 16
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Dynamic RGB backlighting with 16
                 million colors, cooling grip, and precision bumper buttons.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -904,12 +914,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9<!-- --> (<!-- -->876<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9<!-- --> (<!-- -->876<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->90</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-gaming-rgb">View Details</button>
               </div>
             </div>
@@ -917,7 +927,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-magnetic-premium" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Magnetic Premium Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -954,13 +964,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Magnetic</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Magnetic</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Magnetic Premium Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">40 N52 magnets for perfect MagSafe
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">40 N52 magnets for perfect MagSafe
                 alignment with anodized aluminum rim and glass back.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -991,12 +1001,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">5<!-- --> (<!-- -->542<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">5<!-- --> (<!-- -->542<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->120</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-magnetic-premium">View Details</button>
               </div>
             </div>
@@ -1004,7 +1014,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-executive-business" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Executive Business Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1041,13 +1051,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Luxury</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Luxury</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Executive Business Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Full-grain leather folio with card
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Full-grain leather folio with card
                 slots, cash pocket, and stand. The ultimate executive accessory.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1077,12 +1087,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.8<!-- --> (<!-- -->418<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.8<!-- --> (<!-- -->418<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->150</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-executive-business">View Details</button>
               </div>
             </div>
@@ -1090,7 +1100,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col" id="product-custom-designer"
             style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Custom Designer Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1127,13 +1137,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Custom</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Custom</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Custom Designer Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Upload your artwork, photo, or logo.
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Upload your artwork, photo, or logo.
                 Printed with UV-resistant inks on premium hard shell.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1163,12 +1173,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9<!-- --> (<!-- -->724<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9<!-- --> (<!-- -->724<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->180</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-custom-designer">View Details</button>
               </div>
             </div>
@@ -1176,7 +1186,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col" id="product-luxury-limited"
             style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Limited Edition Luxury Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1213,13 +1223,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Luxury</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Luxury</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Limited Edition Luxury Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Numbered edition. 24K gold-plated
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Numbered edition. 24K gold-plated
                 accents, hand-polished edges, and a certificate of authenticity.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1250,12 +1260,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">5<!-- --> (<!-- -->212<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">5<!-- --> (<!-- -->212<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->200</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-luxury-limited">View Details</button>
               </div>
             </div>
@@ -1263,7 +1273,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-iphone16-leather-gold" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Signature Gold Leather Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1300,13 +1310,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Leather</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Leather</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Signature Gold Leather Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Top-grain premium leather accented
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Top-grain premium leather accented
                 with polished 24K gold camera rims and side buttons.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1336,12 +1346,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9<!-- --> (<!-- -->612<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9<!-- --> (<!-- -->612<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->85</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-iphone16-leather-gold">View Details</button>
               </div>
             </div>
@@ -1388,17 +1398,17 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Transparent</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Transparent</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Aura Gold Crystal Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Premium clear backplate outlined with
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Premium clear backplate outlined with
                 24K gold electroplated edges and custom diamond camera bezel.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>iPhone 17 Pro / Pro Max</div>
+                </svg>15 pro/15 pro max</div>
               <div class="flex items-center gap-1.5 mb-3">
                 <div class="flex"><svg width="10" height="10" viewBox="0 0 24 24" fill="#C9A84C" stroke="#C9A84C"
                     stroke-width="2">
@@ -1424,12 +1434,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9 (32)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9 (32)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$109</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-iphone17-aura-gold">View Details</button>
               </div>
             </div>
@@ -1476,17 +1486,17 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Luxury</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Luxury</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Titanium Cyber Carbon Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Aerospace carbon fiber fused with a
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Aerospace carbon fiber fused with a
                 grade-5 titanium frame. The future of device protection.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                </svg>iPhone 17 Pro / Pro Max</div>
+                </svg>16 pro/16 pro max</div>
               <div class="flex items-center gap-1.5 mb-3">
                 <div class="flex"><svg width="10" height="10" viewBox="0 0 24 24" fill="#C9A84C" stroke="#C9A84C"
                     stroke-width="2">
@@ -1513,12 +1523,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">5 (48)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">5 (48)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$179</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-iphone17-titanium-cyber">View Details</button>
               </div>
             </div>
@@ -1527,7 +1537,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-samsungs25-armor-metallic" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Metropolis Armor Metallic Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1564,13 +1574,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Rugged</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Rugged</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Metropolis Armor Metallic Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Industrial-grade alloy framing with a
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Industrial-grade alloy framing with a
                 tactile rubberized body for ultimate shock absorption.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1600,12 +1610,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.8<!-- --> (<!-- -->345<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.8<!-- --> (<!-- -->345<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->95</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-samsungs25-armor-metallic">View Details</button>
               </div>
             </div>
@@ -1613,7 +1623,7 @@
           <div class="product-card glass-card group overflow-hidden relative flex flex-col"
             id="product-samsungs26-holo-glass" style="opacity: 1;transform: none">
             <div class="relative h-52 overflow-hidden flex-shrink-0"
-              style="background:linear-gradient(135deg, var(--dark-card) 0%, var(--dark-bg) 100%)"><img
+              style="background: transparent;"><img
                 alt="Holographic Aurora Glass Case" loading="lazy" decoding="async" data-nimg="fill"
                 class="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -1650,13 +1660,13 @@
             </div>
             <div class="p-4 flex flex-col flex-1">
               <div class="flex items-center justify-between mb-1.5"><span
-                  class="text-xs font-semibold uppercase tracking-wider" style="color:#374151">Transparent</span></div>
+                  class="text-xs font-semibold uppercase tracking-wider" style="color:#1f2937">Transparent</span></div>
               <h3
-                class="font-bold text-gray-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
+                class="font-bold text-slate-900 text-sm mb-1 leading-tight group-hover:text-[#C9A84C] transition-colors duration-300">
                 Holographic Aurora Glass Case</h3>
-              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#374151">Self-healing smart glass back with a
+              <p class="text-xs leading-relaxed mb-2 flex-1" style="color:#1f2937">Self-healing smart glass back with a
                 custom holographic finish that shifts colors with light.</p>
-              <div class="text-xs mb-3 flex items-center gap-1" style="color:#4B5563"><svg width="10" height="10"
+              <div class="text-xs mb-3 flex items-center gap-1" style="color:#1f2937"><svg width="10" height="10"
                   viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5">
                   <rect x="5" y="2" width="14" height="20" rx="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -1686,12 +1696,12 @@
                     <polygon
                       points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
                     </polygon>
-                  </svg></div><span class="text-xs" style="color:#374151">4.9<!-- --> (<!-- -->19<!-- -->)</span>
+                  </svg></div><span class="text-xs" style="color:#1f2937">4.9<!-- --> (<!-- -->19<!-- -->)</span>
               </div>
               <div class="flex items-center justify-between">
                 <div class="price-tag">$<!-- -->165</div><button
                   class="text-xs font-bold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95"
-                  style="background:linear-gradient(135deg, #C9A84C, #E8C97A);color:var(--dark-bg)"
+                  style="background: transparent;"
                   id="view-samsungs26-holo-glass">View Details</button>
               </div>
             </div>
@@ -1704,13 +1714,13 @@
 
         </div>
         <div class="text-center mt-12" style="opacity: 1;transform: none">
-          <p class="text-sm mb-4" style="color:#374151">Explore our complete range of 200+ premium phone cases</p>
-          <button class="btn-outline-gold px-8 py-3 text-sm" id="browse-all-products">Browse All Products</button>
+          <p class="text-sm mb-4" style="color:#1f2937">Explore our complete range of 200+ premium phone cases</p>
+          <button class="btn-gold shadow-lg text-white px-8 py-3 text-sm" id="browse-all-products">Browse All Products</button>
         </div>
       </div>
     </section>
     <section id="why-us" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="absolute inset-0 grid-bg opacity-20"></div>
@@ -1721,9 +1731,9 @@
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span class="badge-gold">Why Choose
               Us</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">The<!-- --> <span
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">The<!-- --> <span
               class="text-gradient-gold">PHONE FASION</span> Difference</h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">Six pillars of excellence that have made us the trusted
+          <p style="color:#1f2937;opacity: 1;transform: none">Six pillars of excellence that have made us the trusted
             choice for premium phone case enthusiasts worldwide.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1739,13 +1749,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   100%</div>
-                <div class="text-xs" style="color:#374151">Premium Grade</div>
+                <div class="text-xs" style="color:#1f2937">Premium Grade</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Premium Materials</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">We source only top-grade materials — genuine
+            <p class="text-sm leading-relaxed" style="color:#1f2937">We source only top-grade materials — genuine
               leather, aerospace-grade carbon fiber, tempered glass, and eco-friendly silicone — ensuring every case
               feels luxurious.</p>
             <div
@@ -1764,13 +1774,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   200+</div>
-                <div class="text-xs" style="color:#374151">Unique Designs</div>
+                <div class="text-xs" style="color:#1f2937">Unique Designs</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Stylish Designs</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">Our in-house design team continuously innovates to
+            <p class="text-sm leading-relaxed" style="color:#1f2937">Our in-house design team continuously innovates to
               bring you trend-forward aesthetics that complement your personal style and smartphone brand.</p>
             <div
               class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -1788,13 +1798,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   6ft</div>
-                <div class="text-xs" style="color:#374151">Drop Tested</div>
+                <div class="text-xs" style="color:#1f2937">Drop Tested</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Maximum Protection</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">Every case passes 12-point quality testing
+            <p class="text-sm leading-relaxed" style="color:#1f2937">Every case passes 12-point quality testing
               including drop tests from 6ft, UV resistance, scratch testing, and dust and water repellency checks.</p>
             <div
               class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -1812,13 +1822,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   &lt;2h</div>
-                <div class="text-xs" style="color:#374151">Response Time</div>
+                <div class="text-xs" style="color:#1f2937">Response Time</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Fast Support</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">Our dedicated customer support team is available 7
+            <p class="text-sm leading-relaxed" style="color:#1f2937">Our dedicated customer support team is available 7
               days a week to assist you with orders, returns, and product inquiries — with average response under 2
               hours.</p>
             <div
@@ -1837,13 +1847,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   ISO</div>
-                <div class="text-xs" style="color:#374151">Certified QA</div>
+                <div class="text-xs" style="color:#1f2937">Certified QA</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Quality Assurance</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">ISO-certified quality control ensures every single
+            <p class="text-sm leading-relaxed" style="color:#1f2937">ISO-certified quality control ensures every single
               case leaving our facility meets the highest standards. Zero compromise on finish, fit, or function.</p>
             <div
               class="absolute bottom-0 left-0 right-0 h-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -1861,13 +1871,13 @@
                 <div class="text-xl font-black"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   4.9★</div>
-                <div class="text-xs" style="color:#374151">Avg Rating</div>
+                <div class="text-xs" style="color:#1f2937">Avg Rating</div>
               </div>
             </div>
             <h3
-              class="font-bold text-gray-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
+              class="font-bold text-slate-900 text-lg mt-4 mb-3 group-hover:text-[#C9A84C] transition-colors duration-300">
               Customer Satisfaction</h3>
-            <p class="text-sm leading-relaxed" style="color:#374151">With a 4.9/5 average rating from over 50,000
+            <p class="text-sm leading-relaxed" style="color:#1f2937">With a 4.9/5 average rating from over 50,000
               verified customers worldwide, customer satisfaction is at the heart of everything we do at PHONE FASION
               INC.</p>
             <div
@@ -1888,16 +1898,16 @@
       </div>
     </section>
     <section id="documents" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span
               class="badge-gold">Transparency &amp; Trust</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">Official Company<!-- -->
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">Official Company<!-- -->
             <span class="text-gradient-gold">Documents</span></h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">PHONE FASION INC is a fully registered and legally
+          <p style="color:#1f2937;opacity: 1;transform: none">PHONE FASION INC is a fully registered and legally
             compliant business. Review our official documentation below.</p>
         </div>
         <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
@@ -1908,29 +1918,29 @@
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25)">🏛️</div>
               <div><span class="text-xs font-bold px-2 py-0.5 rounded-full mb-1 inline-block"
                   style="background:rgba(201,168,76,0.15);color:#C9A84C;border:1px solid rgba(201,168,76,0.2)">Official</span>
-                <div class="text-xs font-medium" style="color:#374151">Incorporation</div>
+                <div class="text-xs font-medium" style="color:#1f2937">Incorporation</div>
               </div>
             </div>
-            <h3 class="font-bold text-gray-900 text-base mb-2 group-hover:text-[#C9A84C] transition-colors">Company
+            <h3 class="font-bold text-slate-900 text-base mb-2 group-hover:text-[#C9A84C] transition-colors">Company
               Incorporation Documents</h3>
-            <p class="text-sm leading-relaxed mb-5" style="color:#374151">Contains the official articles of
+            <p class="text-sm leading-relaxed mb-5" style="color:#1f2937">Contains the official articles of
               incorporation, company registration details, and state-filed documents for PHONE FASION INC (Company No.
               P14000069743).</p>
             <div class="flex items-center gap-3 mb-4">
-              <div class="flex items-center gap-2 text-xs" style="color:#374151"><svg width="12" height="12"
+              <div class="flex items-center gap-2 text-xs" style="color:#1f2937"><svg width="12" height="12"
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                   <polyline points="14 2 14 8 20 8"></polyline>
                 </svg>Phone Fasion Company Doc.pdf</div>
             </div>
             <div class="flex gap-2"><a href="./Phone%20Fasion%20Company%20Doc.pdf" target="_blank"
-                class="btn-gold shadow-md text-black flex-1 py-2.5 text-xs flex items-center justify-center gap-2"
+                class="btn-gold shadow-lg text-white flex-1 py-2.5 text-xs flex items-center justify-center gap-2"
                 id="view-company-doc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.5">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>View Document</a><a href="./Phone%20Fasion%20Company%20Doc.pdf" download=""
-                class="btn-outline-gold px-3 py-2.5 text-xs flex items-center justify-center" id="download-company-doc"
+                class="btn-gold shadow-lg text-white px-3 py-2.5 text-xs flex items-center justify-center" id="download-company-doc"
                 aria-label="Download Company Incorporation Documents"><svg width="14" height="14" viewBox="0 0 24 24"
                   fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1945,29 +1955,29 @@
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25)">📊</div>
               <div><span class="text-xs font-bold px-2 py-0.5 rounded-full mb-1 inline-block"
                   style="background:rgba(201,168,76,0.15);color:#C9A84C;border:1px solid rgba(201,168,76,0.2)">2026</span>
-                <div class="text-xs font-medium" style="color:#374151">Annual Report</div>
+                <div class="text-xs font-medium" style="color:#1f2937">Annual Report</div>
               </div>
             </div>
-            <h3 class="font-bold text-gray-900 text-base mb-2 group-hover:text-[#C9A84C] transition-colors">Company
+            <h3 class="font-bold text-slate-900 text-base mb-2 group-hover:text-[#C9A84C] transition-colors">Company
               Annual Report 2026</h3>
-            <p class="text-sm leading-relaxed mb-5" style="color:#374151">The official annual report detailing company
+            <p class="text-sm leading-relaxed mb-5" style="color:#1f2937">The official annual report detailing company
               performance, business activities, and regulatory compliance for PHONE FASION INC for the fiscal year 2026.
             </p>
             <div class="flex items-center gap-3 mb-4">
-              <div class="flex items-center gap-2 text-xs" style="color:#374151"><svg width="12" height="12"
+              <div class="flex items-center gap-2 text-xs" style="color:#1f2937"><svg width="12" height="12"
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                   <polyline points="14 2 14 8 20 8"></polyline>
                 </svg>phone fasion annual report 2026.pdf</div>
             </div>
             <div class="flex gap-2"><a href="./phone%20fasion%20annual%20report%202026.pdf" target="_blank"
-                class="btn-gold shadow-md text-black flex-1 py-2.5 text-xs flex items-center justify-center gap-2"
+                class="btn-gold shadow-lg text-white flex-1 py-2.5 text-xs flex items-center justify-center gap-2"
                 id="view-annual-report"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2.5">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>View Document</a><a href="./phone%20fasion%20annual%20report%202026.pdf" download=""
-                class="btn-outline-gold px-3 py-2.5 text-xs flex items-center justify-center"
+                class="btn-gold shadow-lg text-white px-3 py-2.5 text-xs flex items-center justify-center"
                 id="download-annual-report" aria-label="Download Company Annual Report 2026"><svg width="14" height="14"
                   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1980,14 +1990,14 @@
           <div class="inline-flex items-center gap-2 px-6 py-3 rounded-xl"
             style="background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.12)"><span
               style="color:#C9A84C">🔒</span>
-            <p class="text-sm" style="color:#4B5563">All documents are official and legally filed with the State of
+            <p class="text-sm" style="color:#1f2937">All documents are official and legally filed with the State of
               Florida. Company Number:<!-- --> <span style="color:#C9A84C" class="font-semibold">P14000069743</span></p>
           </div>
         </div>
       </div>
     </section>
     <section id="company-info" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="absolute inset-0 particles-bg opacity-30"></div>
@@ -1995,9 +2005,9 @@
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span class="badge-gold">Company
               Information</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">About<!-- --> <span
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">About<!-- --> <span
               class="text-gradient-gold">PHONE FASION INC</span></h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">Official company details and contact information for
+          <p style="color:#1f2937;opacity: 1;transform: none">Official company details and contact information for
             PHONE FASION INC.</p>
         </div>
         <div class="max-w-4xl mx-auto">
@@ -2007,8 +2017,8 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">🏢</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Company Name</div>
-                <div class="font-semibold text-sm text-gray-900 break-words">PHONE FASION INC</div>
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Company Name</div>
+                <div class="font-semibold text-sm text-slate-900 break-words">PHONE FASION INC</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4 product-card" id="info-president"
@@ -2016,8 +2026,8 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">👤</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">President</div>
-                <div class="font-semibold text-sm text-gray-900 break-words">MD G Kibria</div>
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">President</div>
+                <div class="font-semibold text-sm text-slate-900 break-words">MD G Kibria</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4 product-card" id="info-company-number"
@@ -2025,9 +2035,9 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">🔢</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Company Number
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Company Number
                 </div>
-                <div class="font-semibold text-sm text-gray-900 break-words">P14000069743</div>
+                <div class="font-semibold text-sm text-slate-900 break-words">P14000069743</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4 product-card" id="info-ein-number"
@@ -2035,8 +2045,8 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">🗂️</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">EIN Number</div>
-                <div class="font-semibold text-sm text-gray-900 break-words">47-1636518</div>
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">EIN Number</div>
+                <div class="font-semibold text-sm text-slate-900 break-words">47-1636518</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4 product-card" id="info-email"
@@ -2044,9 +2054,9 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📧</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Email</div><a
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Email</div><a
                   href="mailto:admin@phonefasioninc.com"
-                  class="font-semibold text-sm text-gray-900 hover:text-[#C9A84C] transition-colors break-all">admin@phonefasioninc.com</a>
+                  class="font-semibold text-sm text-slate-900 hover:text-[#C9A84C] transition-colors break-all">admin@phonefasioninc.com</a>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4 product-card" id="info-phone"
@@ -2054,9 +2064,9 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📞</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Phone</div><a
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Phone</div><a
                   href="tel:+18053446414"
-                  class="font-semibold text-sm text-gray-900 hover:text-[#C9A84C] transition-colors break-all">+1 (805)
+                  class="font-semibold text-sm text-slate-900 hover:text-[#C9A84C] transition-colors break-all">+1 (805)
                   344-6414</a>
               </div>
             </div>
@@ -2065,9 +2075,9 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📍</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Business Address
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Business Address
                 </div>
-                <div class="font-semibold text-sm text-gray-900 break-words">7639 SW 60TH ST, OCALA, FL 34474, United
+                <div class="font-semibold text-sm text-slate-900 break-words">7639 SW 60TH ST, OCALA, FL 34474, United
                   States</div>
               </div>
             </div>
@@ -2076,9 +2086,9 @@
               <div class="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">✅</div>
               <div class="min-w-0">
-                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#374151">Business Status
+                <div class="text-xs font-medium mb-1 uppercase tracking-widest" style="color:#1f2937">Business Status
                 </div>
-                <div class="font-semibold text-sm text-gray-900 break-words">Active &amp; Registered ✓</div>
+                <div class="font-semibold text-sm text-slate-900 break-words">Active &amp; Registered ✓</div>
               </div>
             </div>
           </div>
@@ -2086,10 +2096,10 @@
             <div class="w-full h-full flex flex-col items-center justify-center"
               style="background:linear-gradient(135deg, rgba(201,168,76,0.04), rgba(255,255,255,0.9))">
               <div class="text-5xl mb-4">📍</div>
-              <div class="font-bold text-gray-900 text-lg mb-1">PHONE FASION INC</div>
-              <div style="color:#4B5563" class="text-sm text-center px-4">7639 SW 60TH ST, OCALA, FL 34474<br />United
+              <div class="font-bold text-slate-900 text-lg mb-1">PHONE FASION INC</div>
+              <div style="color:#1f2937" class="text-sm text-center px-4">7639 SW 60TH ST, OCALA, FL 34474<br />United
                 States</div><a href="https://maps.google.com/?q=7639+SW+60TH+ST+OCALA+FL+34474" target="_blank"
-                rel="noopener noreferrer" class="mt-4 btn-outline-gold px-5 py-2 text-xs" id="view-on-maps">View on
+                rel="noopener noreferrer" class="mt-4 btn-gold shadow-lg text-white px-5 py-2 text-xs" id="view-on-maps">View on
                 Google Maps</a>
             </div>
           </div>
@@ -2097,7 +2107,7 @@
       </div>
     </section>
     <section id="contact" class="section-padding relative overflow-hidden"
-      style="background:linear-gradient(180deg, var(--dark-bg), var(--dark-bg))">
+      style="background: transparent;">
       <div class="absolute top-0 left-0 right-0 h-px"
         style="background:linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)"></div>
       <div class="absolute inset-0 grid-bg opacity-20"></div>
@@ -2107,9 +2117,9 @@
         <div class="section-header">
           <div class="flex justify-center mb-4" style="opacity: 1;transform: none"><span class="badge-gold">Get In
               Touch</span></div>
-          <h2 class="section-title text-gray-900 mb-4" style="opacity: 1;transform: none">Contact<!-- --> <span
+          <h2 class="section-title text-slate-900 mb-4" style="opacity: 1;transform: none">Contact<!-- --> <span
               class="text-gradient-gold">Our Team</span></h2>
-          <p style="color:#4B5563;opacity: 1;transform: none">Have questions about our products? Interested in bulk
+          <p style="color:#1f2937;opacity: 1;transform: none">Have questions about our products? Interested in bulk
             orders or custom designs? We'd love to hear from you.</p>
         </div>
         <div class="grid lg:grid-cols-5 gap-10 max-w-5xl mx-auto">
@@ -2118,34 +2128,34 @@
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📧</div>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#374151">Email Us</div><a
+                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#1f2937">Email Us</div><a
                   href="mailto:admin@phonefasioninc.com"
-                  class="font-semibold text-gray-900 hover:text-[#C9A84C] transition-colors text-sm block">admin@phonefasioninc.com</a>
-                <div class="text-xs mt-0.5" style="color:#374151">We reply within 2 hours</div>
+                  class="font-semibold text-slate-900 hover:text-[#C9A84C] transition-colors text-sm block">admin@phonefasioninc.com</a>
+                <div class="text-xs mt-0.5" style="color:#1f2937">We reply within 2 hours</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4" id="contact-info-1">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📞</div>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#374151">Call Us</div><a
+                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#1f2937">Call Us</div><a
                   href="tel:+18053446414"
-                  class="font-semibold text-gray-900 hover:text-[#C9A84C] transition-colors text-sm block">+1 (805)
+                  class="font-semibold text-slate-900 hover:text-[#C9A84C] transition-colors text-sm block">+1 (805)
                   344-6414</a>
-                <div class="text-xs mt-0.5" style="color:#374151">Mon–Sat, 9AM–6PM EST</div>
+                <div class="text-xs mt-0.5" style="color:#1f2937">Mon–Sat, 9AM–6PM EST</div>
               </div>
             </div>
             <div class="glass-card p-5 flex items-start gap-4" id="contact-info-2">
               <div class="w-12 h-12 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2)">📍</div>
               <div>
-                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#374151">Visit Us</div>
-                <div class="font-semibold text-gray-900 text-sm">7639 SW 60TH ST</div>
-                <div class="text-xs mt-0.5" style="color:#374151">OCALA, FL 34474, USA</div>
+                <div class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#1f2937">Visit Us</div>
+                <div class="font-semibold text-slate-900 text-sm">7639 SW 60TH ST</div>
+                <div class="text-xs mt-0.5" style="color:#1f2937">OCALA, FL 34474, USA</div>
               </div>
             </div>
             <div class="glass-card p-5">
-              <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#374151">Follow Us</div>
+              <div class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#1f2937">Follow Us</div>
               <div class="flex gap-3"><button
                   class="w-9 h-9 rounded-xl flex items-center justify-center text-xs font-bold transition-all hover:scale-110"
                   style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);color:#C9A84C"
@@ -2164,17 +2174,17 @@
           <div class="lg:col-span-3" style="opacity: 1;transform: none">
             <div class="glass-card p-8">
               <form id="contact-form">
-                <h3 class="font-bold text-gray-900 text-lg mb-6">Send Us a Message</h3>
+                <h3 class="font-bold text-slate-900 text-lg mb-6">Send Us a Message</h3>
                 <div class="grid sm:grid-cols-2 gap-4 mb-4">
                   <div><label class="block text-xs font-semibold uppercase tracking-widest mb-2"
-                      style="color:#374151">Your Name *</label><input type="text" id="contact-name"
+                      style="color:#1f2937">Your Name *</label><input type="text" id="contact-name"
                       placeholder="John Doe" required="" class="form-input" name="name" value="" /></div>
                   <div><label class="block text-xs font-semibold uppercase tracking-widest mb-2"
-                      style="color:#374151">Email Address *</label><input type="email" id="contact-email"
+                      style="color:#1f2937">Email Address *</label><input type="email" id="contact-email"
                       placeholder="john@example.com" required="" class="form-input" name="email" value="" /></div>
                 </div>
                 <div class="mb-4"><label class="block text-xs font-semibold uppercase tracking-widest mb-2"
-                    style="color:#374151">Subject *</label><select name="subject" id="contact-subject" required=""
+                    style="color:#1f2937">Subject *</label><select name="subject" id="contact-subject" required=""
                     class="form-input" style="cursor:pointer">
                     <option value="" style="background:var(--dark-card)" selected="">Select a subject</option>
                     <option value="product" style="background:var(--dark-card)">Product Inquiry</option>
@@ -2185,16 +2195,16 @@
                     <option value="other" style="background:var(--dark-card)">Other</option>
                   </select></div>
                 <div class="mb-6"><label class="block text-xs font-semibold uppercase tracking-widest mb-2"
-                    style="color:#374151">Message *</label><textarea name="message" id="contact-message"
+                    style="color:#1f2937">Message *</label><textarea name="message" id="contact-message"
                     placeholder="Tell us how we can help you..." required="" rows="5"
                     class="form-input resize-none"></textarea></div><button type="submit"
-                  class="btn-gold shadow-md text-black w-full py-4 text-sm flex items-center justify-center gap-3"
+                  class="btn-gold shadow-lg text-white w-full py-4 text-sm flex items-center justify-center gap-3"
                   id="contact-submit"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2.5">
                     <line x1="22" y1="2" x2="11" y2="13"></line>
                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                   </svg>Send Message</button>
-                <p class="text-center text-xs mt-4" style="color:#374151">Or email us directly at<!-- --> <a
+                <p class="text-center text-xs mt-4" style="color:#1f2937">Or email us directly at<!-- --> <a
                     href="mailto:admin@phonefasioninc.com"
                     class="text-[#C9A84C] hover:underline">admin@phonefasioninc.com</a></p>
               </form>
@@ -2204,14 +2214,14 @@
       </div>
     </section>
     <footer
-      style="background:linear-gradient(180deg, var(--dark-bg), #020408);border-top:1px solid rgba(201,168,76,0.12)">
+      style="background: transparent;">
       <div class="max-w-7xl mx-auto px-6 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div class="lg:col-span-1">
             <div class="flex items-center gap-3 mb-5">
               <div class="w-11 h-11 rounded-xl flex items-center justify-center"
                 style="background:linear-gradient(135deg, #C9A84C, #E8C97A)"><svg width="22" height="22"
-                  viewBox="0 0 24 24" fill="none" stroke="var(--dark-bg)" stroke-width="2.5" stroke-linecap="round"
+                  viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
                   stroke-linejoin="round">
                   <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
@@ -2220,12 +2230,12 @@
                 <div class="font-black text-sm tracking-widest"
                   style="background:linear-gradient(135deg, #C9A84C, #E8C97A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
                   PHONE FASION</div>
-                <div class="text-xs tracking-widest" style="color:#374151">INC</div>
+                <div class="text-xs tracking-widest" style="color:#1f2937">INC</div>
               </div>
             </div>
-            <p class="text-sm leading-relaxed mb-5" style="color:#374151">Premium phone accessories company based in
+            <p class="text-sm leading-relaxed mb-5" style="color:#1f2937">Premium phone accessories company based in
               Ocala, Florida. We craft luxury, protective, and custom phone cases for every lifestyle.</p>
-            <div class="space-y-2 text-sm" style="color:#374151">
+            <div class="space-y-2 text-sm" style="color:#1f2937">
               <div class="flex items-center gap-2"><span style="color:#C9A84C">📍</span>7639 SW 60TH ST, OCALA, FL 34474
               </div>
               <div class="flex items-center gap-2"><span style="color:#C9A84C">📞</span><a href="tel:+18053446414"
@@ -2239,31 +2249,31 @@
             <h4 class="font-bold text-sm tracking-widest uppercase mb-5" style="color:#C9A84C">Quick Links</h4>
             <ul class="space-y-2.5">
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-home"><span
+                  style="color:#1f2937" id="footer-link-home"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Home</button>
               </li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-about-us"><span
+                  style="color:#1f2937" id="footer-link-about-us"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>About
                   Us</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-categories"><span
+                  style="color:#1f2937" id="footer-link-categories"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Categories</button>
               </li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-featured"><span
+                  style="color:#1f2937" id="footer-link-featured"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Featured</button>
               </li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-why-choose-us"><span
+                  style="color:#1f2937" id="footer-link-why-choose-us"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Why
                   Choose Us</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-documents"><span
+                  style="color:#1f2937" id="footer-link-documents"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Documents</button>
               </li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151" id="footer-link-contact"><span
+                  style="color:#1f2937" id="footer-link-contact"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Contact</button>
               </li>
             </ul>
@@ -2272,35 +2282,35 @@
             <h4 class="font-bold text-sm tracking-widest uppercase mb-5" style="color:#C9A84C">Categories</h4>
             <ul class="space-y-2.5">
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Luxury
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Rugged
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Transparent
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Silicone
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Leather
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Gaming
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Magnetic
                   Cases</button></li>
               <li><button class="text-sm hover:text-[#C9A84C] transition-colors flex items-center gap-2 group"
-                  style="color:#374151"><span
+                  style="color:#1f2937"><span
                     class="w-1.5 h-1.5 rounded-full bg-[#C9A84C] opacity-0 group-hover:opacity-100 transition-opacity"></span>Custom
                   Printed</button></li>
             </ul>
@@ -2309,29 +2319,29 @@
             <h4 class="font-bold text-sm tracking-widest uppercase mb-5" style="color:#C9A84C">Company Info</h4>
             <div class="space-y-3">
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">Company<!-- -->:</span><span class="text-xs text-gray-900 font-medium">PHONE
+                  style="color:#1f2937">Company<!-- -->:</span><span class="text-xs text-slate-900 font-medium">PHONE
                   FASION INC</span></div>
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">President<!-- -->:</span><span class="text-xs text-gray-900 font-medium">MD G
+                  style="color:#1f2937">President<!-- -->:</span><span class="text-xs text-slate-900 font-medium">MD G
                   Kibria</span></div>
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">Reg. No.<!-- -->:</span><span
-                  class="text-xs text-gray-900 font-medium">P14000069743</span></div>
+                  style="color:#1f2937">Reg. No.<!-- -->:</span><span
+                  class="text-xs text-slate-900 font-medium">P14000069743</span></div>
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">EIN<!-- -->:</span><span
-                  class="text-xs text-gray-900 font-medium">47-1636518</span></div>
+                  style="color:#1f2937">EIN<!-- -->:</span><span
+                  class="text-xs text-slate-900 font-medium">47-1636518</span></div>
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">State<!-- -->:</span><span class="text-xs text-gray-900 font-medium">Florida,
+                  style="color:#1f2937">State<!-- -->:</span><span class="text-xs text-slate-900 font-medium">Florida,
                   USA</span></div>
               <div class="flex items-start gap-2"><span class="text-xs font-medium min-w-[65px]"
-                  style="color:#374151">Status<!-- -->:</span><span class="text-xs text-gray-900 font-medium">Active
+                  style="color:#1f2937">Status<!-- -->:</span><span class="text-xs text-slate-900 font-medium">Active
                   ✓</span></div>
             </div>
             <div class="mt-6">
               <div class="text-xs font-bold uppercase tracking-widest mb-3" style="color:#C9A84C">Stay Updated</div>
               <div class="flex gap-2"><input type="email" placeholder="Your email"
                   class="form-input text-xs py-2.5 flex-1" id="footer-newsletter-email" /><button
-                  class="btn-gold shadow-md text-black px-3 py-2.5 text-xs" id="footer-newsletter-submit">→</button>
+                  class="btn-gold shadow-lg text-white px-3 py-2.5 text-xs" id="footer-newsletter-submit">→</button>
               </div>
             </div>
           </div>
@@ -2339,16 +2349,16 @@
       </div>
       <div class="border-t" style="border-color:rgba(201,168,76,0.08)">
         <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p class="text-xs" style="color:#374151">© <!-- -->2026<!-- --> PHONE FASION INC. All rights reserved. Company
+          <p class="text-xs" style="color:#1f2937">© <!-- -->2026<!-- --> PHONE FASION INC. All rights reserved. Company
             No. P14000069743 | EIN: 47-1636518</p>
           <div class="flex items-center gap-6"><button class="text-xs hover:text-[#C9A84C] transition-colors"
-              style="color:#374151" id="footer-privacy">Privacy Policy</button><button
-              class="text-xs hover:text-[#C9A84C] transition-colors" style="color:#374151" id="footer-terms">Terms of
+              style="color:#1f2937" id="footer-privacy">Privacy Policy</button><button
+              class="text-xs hover:text-[#C9A84C] transition-colors" style="color:#1f2937" id="footer-terms">Terms of
               Service</button><button
               class="w-8 h-8 rounded-lg flex items-center justify-center transition-all hover:scale-110 pulse-gold"
               style="background:linear-gradient(135deg, #C9A84C, #E8C97A)" id="footer-back-to-top"
               aria-label="Back to top"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                stroke="var(--dark-bg)" stroke-width="3">
+                stroke="#ffffff" stroke-width="3">
                 <polyline points="18 15 12 9 6 15"></polyline>
               </svg></button></div>
         </div>
