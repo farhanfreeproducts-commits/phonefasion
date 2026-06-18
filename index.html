@@ -51,6 +51,80 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/style.css">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+    
+    :root {
+      --dark-bg: #0a0a0a;
+      --dark-card: #151515;
+    }
+    body {
+      background-color: var(--dark-bg);
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    .text-gradient-gold {
+      background: linear-gradient(135deg, #E8C97A 0%, #C9A84C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .badge-gold {
+      background: rgba(201, 168, 76, 0.15);
+      color: #E8C97A;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      backdrop-filter: blur(4px);
+    }
+    .price-tag {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #E8C97A;
+    }
+    .glass-card {
+      background: rgba(25, 25, 25, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+    }
+    .glass-header {
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .nav-link {
+      color: #9CA3AF;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #E8C97A;
+    }
+    .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #C9A84C, #E8C97A);
+      color: #000;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover { transform: scale(1.05); }
+  </style>
 </head>
 
 <body>
@@ -2283,6 +2357,25 @@
   </main><!--$--><!--/$-->
   <script src="./js/script.js"></script>
 
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.querySelector('button[aria-label="Toggle menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+    const pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
+    pdfLinks.forEach(link => { link.setAttribute('target', '_blank'); link.setAttribute('rel', 'noopener noreferrer'); });
+    const wishlistButtons = document.querySelectorAll('button[id^="wishlist-"]');
+    wishlistButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.style.background = 'rgba(201, 168, 76, 0.4)';
+            setTimeout(() => { this.style.background = 'rgba(255,255,255,0.65)'; }, 300);
+        });
+    });
+});
+</script>
 </body>
 
 </html>
