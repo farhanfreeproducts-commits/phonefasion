@@ -126,22 +126,66 @@
     }
     .btn-primary:hover { transform: scale(1.05); }
 
-    /* ── Dark-theme text colour fixes ──────────────────────────── */
-    /* Tailwind text-gray-900 (#111827) is invisible on dark bg    */
-    .text-gray-900 { color: #f9fafb !important; }
+    /* ═══════════════════════════════════════════════════════════ */
+    /*  DARK THEME — TEXT VISIBILITY FIXES                        */
+    /*  Tailwind text-gray-900 = #111827 (near-black) which is    */
+    /*  invisible on the #0a0a0a dark background. Force white.    */
+    /* ═══════════════════════════════════════════════════════════ */
 
-    /* Dark inline grays used as body copy / labels                */
-    [style*="color:#4B5563"] { color: #9CA3AF !important; }
-    [style*="color:#374151"] { color: #9CA3AF !important; }
-    [style*="color:#6B7280"] { color: #D1D5DB !important; }
+    /* All headings & text that Tailwind marks as gray-900 */
+    .text-gray-900,
+    h1.text-gray-900, h2.text-gray-900, h3.text-gray-900,
+    h4.text-gray-900, p.text-gray-900, div.text-gray-900,
+    span.text-gray-900, li.text-gray-900 { color: #ffffff !important; }
 
-    /* Subheadings & card titles inside glass-cards                */
+    /* Section titles */
+    .section-title { color: #ffffff !important; }
+
+    /* Hero heading shimmer text */
+    .shimmer-gold { color: #E8C97A !important; -webkit-text-fill-color: #E8C97A !important; }
+
+    /* Body copy dark inline styles */
+    p, li, div, span { /* don't override gold — see below */ }
+    [style*="color:#4B5563"] { color: #adb5bd !important; }
+    [style*="color:#374151"] { color: #adb5bd !important; }
+    [style*="color:#6B7280"] { color: #ced4da !important; }
+
+    /* Card / product headings */
     .glass-card h3, .glass-card h4,
-    .product-card h3, .product-card h4 { color: #f9fafb !important; }
+    .product-card h3, .product-card h4,
+    .glass-card .font-bold,
+    .product-card .font-bold { color: #ffffff !important; }
 
-    /* Form labels & misc dark spans                               */
-    .form-input { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #f9fafb; }
-    .form-input::placeholder { color: #6B7280; }
+    /* Footer address & info text */
+    footer p, footer li, footer div, footer span { color: #adb5bd; }
+    footer a { color: #adb5bd; }
+    footer a:hover { color: #E8C97A; }
+
+    /* Keep gold text gold */
+    [style*="color:#C9A84C"], [style*="color:#E8C97A"] { -webkit-text-fill-color: unset; }
+
+    /* Buttons */
+    .btn-gold, .btn-outline-gold { font-weight: 700; }
+    .btn-gold { background: linear-gradient(135deg,#C9A84C,#E8C97A); color: #0a0a0a !important; }
+    .btn-outline-gold { border: 1.5px solid #C9A84C; color: #E8C97A !important; background: transparent; padding: 0.6rem 1.2rem; border-radius: 0.5rem; transition: all .3s; }
+
+    /* Get In Touch nav button */
+    nav .btn-gold { color: #0a0a0a !important; }
+
+    /* Form inputs */
+    .form-input {
+      background: rgba(255,255,255,0.05) !important;
+      border: 1px solid rgba(255,255,255,0.12) !important;
+      color: #f9fafb !important;
+      border-radius: 0.5rem;
+      padding: 0.65rem 1rem;
+      width: 100%;
+    }
+    .form-input::placeholder { color: #6B7280 !important; }
+    select.form-input option { background: #151515; color: #f9fafb; }
+
+    /* Trust badges & misc small text */
+    .trust-badge { color: #ced4da; }
   </style>
 </head>
 
