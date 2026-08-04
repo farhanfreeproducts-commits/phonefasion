@@ -114,6 +114,7 @@
       font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
+      color: #ffffff;
     }
     .btn-primary {
       background: linear-gradient(135deg, #C9A84C, #E8C97A);
@@ -124,6 +125,23 @@
       transition: all 0.3s ease;
     }
     .btn-primary:hover { transform: scale(1.05); }
+
+    /* ── Dark-theme text colour fixes ──────────────────────────── */
+    /* Tailwind text-gray-900 (#111827) is invisible on dark bg    */
+    .text-gray-900 { color: #f9fafb !important; }
+
+    /* Dark inline grays used as body copy / labels                */
+    [style*="color:#4B5563"] { color: #9CA3AF !important; }
+    [style*="color:#374151"] { color: #9CA3AF !important; }
+    [style*="color:#6B7280"] { color: #D1D5DB !important; }
+
+    /* Subheadings & card titles inside glass-cards                */
+    .glass-card h3, .glass-card h4,
+    .product-card h3, .product-card h4 { color: #f9fafb !important; }
+
+    /* Form labels & misc dark spans                               */
+    .form-input { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #f9fafb; }
+    .form-input::placeholder { color: #6B7280; }
   </style>
 </head>
 
